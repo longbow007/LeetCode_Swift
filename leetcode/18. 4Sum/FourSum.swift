@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Solution {
+class FourSumSolution {
     func fourSum(_ nums: [Int], _ target: Int) -> [[Int]] {
         let n = nums.count
         var ans: [[Int]] = []
