@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Solution {
+class BestTimeToBuyAndSellStockIIISolution {
     // func maxProfit(_ prices: [Int]) -> Int {
     //     let n = prices.count
     //     if n < 2 {

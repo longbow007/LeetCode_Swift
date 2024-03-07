@@ -9,18 +9,14 @@ import Foundation
 
 class TwoSumSolution {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-        var res: [Int] = []
         var map: [Int: Int] = [:]
-        for i in 0..<nums.count {
-            let x = nums[i]
-            let y = target - x
-            if let j = map[y] {
-                res.append(j)
-                res.append(i)
-                return res
+        for (i, num) in nums.enumerated() {
+            let m = target - num
+            if let j = map[m] {
+                return [i, j]
             }
-            map[x] = i
+            map[num] = i
         }
-        return res
+        return []
     }
 }
